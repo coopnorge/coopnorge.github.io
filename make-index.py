@@ -4,16 +4,7 @@ make_index.py </path/to/directory>
 
 import os
 import argparse
-from mako.template import Template
 
-INDEX_TEMPLATE = r"""
-
-
-Table of contents:
-% for name in names:
-   * [${name.capitalize()}](#${name})
-% endfor
-"""
 EXCLUDED = ['index.md','header.md']
 
 def main():
