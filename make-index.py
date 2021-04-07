@@ -22,7 +22,7 @@ def main():
 def template(fnames):
     result = '\n\n### Table of contents:\n\n'
     for f in fnames:
-        result += "* [{}](#${})\n".format(f.capitalize(),f)
+        result += "* [{}]({})\n".format(f.capitalize(),f)
     return result
 if __name__ == '__main__':
     main()
