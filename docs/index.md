@@ -8,9 +8,9 @@ Ready for production? Review our [pre-flight checklist](production-checklist) be
 
 ### Table of contents:
 
-* [Api-development](#$api-development)
-* [Getting-started](#$getting-started)
-* [Introduction-to-oauth](#$introduction-to-oauth)
-* [Production-checklist](#$production-checklist)
-* [Scopes-and-audience](#$scopes-and-audience)
-* [Token-deepdive](#$token-deepdive)
+* [Api-development](api-development)
+* [Getting-started](getting-started)
+* [Introduction-to-oauth](introduction-to-oauth)
+* [Production-checklist](production-checklist)
+* [Scopes-and-audience](scopes-and-audience)
+* [Token-deepdive](token-deepdive)
