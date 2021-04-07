@@ -36,7 +36,7 @@ Access tokens come in two flavours, standard JWT or opaque. A standard JWT acces
 
 These can be decoded using the debugger at [JWT.io](https://jwt.io/#debugger-io?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c), which allows you to see what data they contain. 
 
-An opaque access token is, well, just that, opaque. They are issued in a way that makes sense only to the issuer, and cannot be decoded in the same way as a JWT access token.
+An opaque access token is, well, just that, opaque. They are issued in a way that makes sense only to the issuer, and cannot be decoded in the same way as a JWT access token. The token will generally only be opaque if it is intended for the authorization server. This is the case if you don't supply an audience in the login flow. Generally, the client will want to specify an audience in the login flow because it wants to have access to an API with some user data, for example the user's coupons. This audience would then be the identifier for the coupon API which is configured by the OAuth2 admins of the APIs available.
 
 Access tokens have a finite life time and will expire based on the settings specified for the requesting client.
 
@@ -44,9 +44,8 @@ Access tokens have a finite life time and will expire based on the settings spec
 We use refresh tokens to get new access tokens without having the user re-authenticate. Refresh tokens allows the authorzation server to issue new access tokens when requested.
 
 Refresh tokens have a finite life time and will expire based on the settings specified for the requesting client. They can also be configured for one-time use only, meaning that every time a refresh token is used to issue a new access token a new refresh token is supplied as well.
-
 ### ID tokens
-ID tokens can contain information about the user, but should not be used for authentication
+ID tokens contains information about the user, but should not be used for authorization. I.e it should not leave the client that obtained the ID token, but the client can inspect it to learn more about the user.
 
 ## Elevator-pitch on authorization code
 
