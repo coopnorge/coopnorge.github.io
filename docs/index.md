@@ -14,3 +14,4 @@ Ready for production? Review our [pre-flight checklist](production-checklist) be
 * [Production-checklist](production-checklist)
 * [Scopes-and-audience](scopes-and-audience)
 * [Token-deepdive](token-deepdive)
+* [Troubleshooting](troubleshooting)

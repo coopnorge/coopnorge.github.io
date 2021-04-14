@@ -4,6 +4,8 @@ We use OAuth to ensure secure and convenient authentication of our users, and ar
 
 If you are new to OAuth or Auth0, we highly recommend that you [sign up for free with Auth0](https://auth0.com/signup) and start familiarising yourself with what they have to offer and the terminology used. 
 
+Once you have read the information below, please make sure to check out the [token deep dive](token-deepdive).
+
 ## Introduction
 
 OAuth 2 is an authorzation framework that allows an application limited access to a user account, without the application requiring access to the users credentials (username or password). This saves the application developer from having to create mechanisms for secure storage of usernames and passwords, session expiration and more. Think of it as authentication as a service.
@@ -16,7 +18,7 @@ A core principle in OAuth is that the user (Resource Owner) is the one who authe
 
 In order for the Client to be allowed access to the user database, it needs to be registered with the Authorization Server and issued its own and unique Client ID and Client Secret (think of it as a username and password for the client). The Client ID and Client Secret does not allow the Client to access the entire user database, but rather gives the application permission to ask the user to grant the application access to their data. 
 
-NB: Client ID and Client Secret should be kept secure and not committed to your version control system
+_Note:_ Client ID and Client Secret should be kept secure and not committed to your version control system
 
 Although OAuth 2 allows for a few different ways of authentication a user, we will only allow using Authorization Code. 
 
