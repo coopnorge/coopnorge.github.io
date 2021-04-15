@@ -17,7 +17,7 @@ For example, the API could have registered your application to only have access 
 Request URL: https://login.developer.coop/authorize?client_id=<your client id>&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fcallback&response_type=code&scope=openid+profile+email+phone+offline_access&state=f4joN6Yn5ZxKVTSXaxhkTh8ogqqX3TOzCPyLrXhn2Pc%3D&audience=https://integration.coop.no/legacy
 ```
 
-See the complete (list of scopes and audiences defined)[scopes-and-audience]. 
+See the complete [list of scopes and audiences defined](scopes-and-audience). 
 
 #### Multiple audience in access token
 There is a little caveat here which is that while you can only ask for one audience at a time, the access token will sometimes contain two audiences if you used the `openid` scope. The point is that the authorization server (auth0) can answer with userinfo from its `/userinfo` endpoint which will essentially give the contents of the id token. So the audience is always auth0 on all requests containing the `openid` scope.
