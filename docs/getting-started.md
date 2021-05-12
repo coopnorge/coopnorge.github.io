@@ -30,6 +30,8 @@ In order to configure a new client, the following info has to be provided by the
 * Scopes (optional)
 * Audience (optional)
 
+Note that `Callback urls` and `Logout urls` are case-sensitive in certain cases, depending on how your web-server is configured. Remember to specify if you need to support both `https://domain.com` and `https://www.domain.com`. 
+
 Once we have this information, along with your public key, we will create a client for you to integrate with Coop. You will recieve an encrypted bundle from us with all the technical details needed to get up and running.
 
 Should you have specific requirements for session lifetime, absolute lifetime and the like, please let us know when requesting a client.
