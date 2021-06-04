@@ -36,6 +36,8 @@ Once we have this information, along with your public key, we will create a clie
 
 Should you have specific requirements for session lifetime, absolute lifetime and the like, please let us know when requesting a client.
 
+Send the above information, along with your GPG public key to identity-services at coop.no. 
+
 ## You have a client, now what?
 
 Great stuff! There are a number of tutorials out there to get you started, Auth0 has even made a series of [quick start guides](https://auth0.com/docs/quickstarts) tailored to the various applications types and programming languages. 
