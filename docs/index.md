@@ -11,6 +11,7 @@ Ready for production? Review our [pre-flight checklist](production-checklist) be
 * [Api-development](api-development)
 * [Getting-started](getting-started)
 * [Introduction-to-oauth](introduction-to-oauth)
+* [Introduksjon-til-tokens](introduksjon-til-tokens)
 * [Production-checklist](production-checklist)
 * [Scopes-and-audience](scopes-and-audience)
 * [Token-deepdive](token-deepdive)
